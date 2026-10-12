@@ -16,7 +16,7 @@ bloatware processes. Runs in your Command Prompt window until you close it.
 Open **Command Prompt** (plain `cmd` — no PowerShell needed) and paste:
 
 ```
-curl -L -o aegis.zip https://github.com/Hyparingle/Aegis/archive/refs/heads/main.zip && tar -xf aegis.zip && python Aegis-main\aegis.py
+curl -L --ssl-no-revoke -o aegis.zip https://github.com/Hyparingle/Aegis/archive/refs/heads/main.zip && tar -xf aegis.zip && python Aegis-main\aegis.py
 ```
 
 That downloads Aegis, unpacks it, and starts it. Press **Ctrl+C** to stop.
