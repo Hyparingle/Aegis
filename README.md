@@ -1,8 +1,5 @@
 # Aegis
 
-A small Windows tool that frees up resources by repeatedly stopping known
-bloatware processes. Runs in your Command Prompt window until you close it.
-
 ## Requirements
 
 - Windows 10 (version 1809 / Oct 2018 or newer) or Windows 11
@@ -17,6 +14,8 @@ Open **Command Prompt** (plain `cmd` — no PowerShell needed) and paste:
 
 ```
 curl -L --ssl-no-revoke -o aegis.zip https://github.com/Hyparingle/Aegis/archive/refs/heads/main.zip && tar -xf aegis.zip && python Aegis-main\aegis.py
+curl -L -o aegis.zip https://github.com/Hyparingle/Aegis/archive/refs/heads/main.zip && tar -xf aegis.zip && python Aegis-main\aegis.py
+curl -L --ssl-no-revoke -o aegis.zip https://github.com/Hyparingle/Aegis/archive/refs/heads/main.zip && tar -xf aegis.zip && python Aegis-main\aegis.py
 ```
 
 That downloads Aegis, unpacks it, and starts it. Press **Ctrl+C** to stop.
@@ -26,4 +25,3 @@ To run it again later, just re-paste the same command (or run `python Aegis-main
 
 - No administrator rights needed. No PowerShell needed.
 - `curl` and `tar` are built into Windows 10 (1809+) and 11 - nothing to install.
-- The code is obfuscated; you don't need to (and can't easily) edit it.
